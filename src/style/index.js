@@ -41,8 +41,34 @@ export const Form = styled.form`
 	@media(max-width: 1050px) {
 		grid-column: 6;
 		position:relative;
-		top: 100px;
+		top: 20px;
 	}
+`;
+
+export const Content = styled.div`
+	display: flex;
+	flex-direction: column;
+	justify-content: center; 
+	align-Itens: center;
+	margin-bottom: 48px;
+
+	@media(max-width: 1050px) {
+		margin-bottom: 110px;
+		
+		p { 
+			color: #FFFFFF; 
+		}		
+	}
+`;
+
+export const View = styled.div`
+	display: block;
+`;
+
+export const Text = styled.p`
+	font-size: 1rem;
+	color: #C4C4C4;
+	font-weight: normal;
 `;
 
 export const BtnLogin = styled.button`

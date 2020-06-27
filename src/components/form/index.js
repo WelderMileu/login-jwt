@@ -1,36 +1,59 @@
 import React from 'react'
-import { Form } from './../../style'
+import { Form, Content, View, Text } from './../../style'
 import InputText from '../input'
 import BtnSubmit from '../btn'
-import user from '../../assets/image/user.png'
+import user from '../../assets/image/user.svg'
 
 const Formulario = () => {
 	return (
 		<Form>
-			<div style={{ display: 'flex', flexDirection:'column', flex:'1' ,justifyContent: 'center', alignItens: 'center', marginBottom: '48px'}}>
-				<div>
-					<img src={ user }  style={{ 
-						width:'50px', 
-						height: '50px' 
-					}}/>
-				</div>
-				<p style={{ fontSize: '24px', color: '#C4C4C4', fontWeight:'normal', marginTop: '2px'}}>
-					LOGIN
-				</p>
-			</div>
-			<InputText type="text" placeholder="E-mail" />
-			<InputText type="text" placeholder="*************************" />
-			<BtnSubmit>
-				Login
-			</BtnSubmit>
-			<p style={{ fontSize: '1rem', color: '#C4C4C4', fontWeight:'bold', marginTop: '48px'}}>
-				Esqueci a senha
-			</p>
-			<p style={{ padding: '10px', color: '#C4C4C4', marginTop: '48px', fontSize:'1rem' }}>
-				User authentication system, ugly in webtocken technology.
-			</p>
+
+			<Content>
+				<View>
+					<img src={ user } />
+					<Text style={ style.TextLogo }>
+					 	Login
+					</Text>
+				</View>
+			</Content>
+
+			<View>
+				<InputText type="text" placeholder="E-mail" />
+				<InputText type="text" placeholder="*************************" />
+				<BtnSubmit> Login </BtnSubmit>
+			</View>
+
+			<View>
+				<Text style={ style.TextLembrete }>
+					Esqueci a senha
+				</Text>
+				<Text style={ style.TextDescripion }>
+					Autenticação de usuario
+					utilizando a Tecnologia JsonWebToken.
+				</Text>
+			</View>
+
 		</Form>
 	)
+}
+
+const style = {
+	TextDescripion : {
+		padding: '10px', 
+		marginTop: '48px',
+		fontFamily: 'arial'
+	},
+
+	TextLembrete : {
+		fontWeight:'bold', 
+		marginTop: '48px'
+	},
+
+	TextLogo : {
+		fontSize: '24px', 
+		marginTop: '2px',
+		textTransform: 'uppercase'
+	}
 }
 
 export default Formulario;
