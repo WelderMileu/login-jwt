@@ -6,13 +6,14 @@ Receber nosso backend com a autenticação jsonwebtoken.
 
 
 
-####Layout da Aplicação.
+> #### Layout da Aplicação.
 
 **Desktop**
 
 ![deskop](src/assets/image/desktop.png)
 
-Mobile 
+
+**Mobile** 
 
 ![deskop](src/assets/image/mobile.png)
 
