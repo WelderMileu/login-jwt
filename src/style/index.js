@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import fundo from './../assets/image/fundo.svg'
+import fundo from './../assets/image/fundo2.svg'
 
 export const Flex12 = styled.div`
 	display: grid;
@@ -9,6 +9,7 @@ export const Flex12 = styled.div`
 	width: 100%;
 	height: 100vh;
 	background-image: url(${fundo});
+	background-color: #63FF70;
 	background-size: cover;
 	position: relative;
 	overflow: hidden;
@@ -17,12 +18,12 @@ export const Flex12 = styled.div`
 export const InputType = styled.input`
 	width: 317px;
 	display: block;
-	padding: .375rem .75rem;
+	padding: .375rem 1.5rem;
 	border: 1px solid #ced4da;
-	border-radius: .25rem;
+	border-radius: 20px;
 	font-size: 1rem;
 	line-height: 1.5;
-	color: #495057;
+	color: #ced4da;
 	background-clip: padding-box;
 	margin-top: 5px;
 `;
@@ -35,7 +36,7 @@ export const Form = styled.form`
 	justify-content: center;
 	text-align: center;
 	position: absolute;
-	top: 200px;
+	top: 100px;
 
 	@media(max-width: 1050px) {
 		grid-column: 6;
@@ -48,9 +49,9 @@ export const BtnLogin = styled.button`
 	width: 317px;
 	height: 38px;
 	display: inline-block;
-	font-weight: 400;
-	border: 1px solid #FFFFFF;
-	border-radius: .25rem;
+	font-weight: bold;
+	border: none;
+	border-radius: 20px;
 	white-spacing: nowreap;
 	font-size: 1rem;
 	padding: .375rem .75rem;
@@ -61,7 +62,7 @@ export const BtnLogin = styled.button`
 	line-height: 1.5;
 	background-color: #63FF70;	
 	cursor: pointer;
-	box-shadow: 4px 5px 5px rgb(0, 0, 0, 0.25);
+	box-shadow: 0px 5px 5px rgb(0, 0, 0, 0.25);
 	transition: .2s ease-in-out;
 
 	&:hover {
@@ -72,7 +73,7 @@ export const BtnLogin = styled.button`
 const ImgFundo = styled.img`
 	grid-column: 3;
 	position: absolute;
-	top: 20px;
+	top: 44px;
 
 	@media(max-width: 1050px) {
 		display:none;
