@@ -2,7 +2,7 @@ import React from 'react'
 import { Form, Content, View, Text } from './../../style'
 import InputText from '../input'
 import BtnSubmit from '../btn'
-import user from '../../assets/image/user.svg'
+import { FaUserCircle } from 'react-icons/fa'
 
 const Formulario = () => {
 	return (
@@ -10,7 +10,7 @@ const Formulario = () => {
 
 			<Content>
 				<View>
-					<img src={ user } />
+					<FaUserCircle style={ style.FaIcon }/>
 					<Text style={ style.TextLogo }>
 					 	Login
 					</Text>
@@ -53,6 +53,11 @@ const style = {
 		fontSize: '24px', 
 		marginTop: '2px',
 		textTransform: 'uppercase'
+	},
+
+	FaIcon : {
+		fontSize:'40px', 
+		color:'#C4C4C4'
 	}
 }
 

@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import fundo from './../assets/image/fundo2.svg'
+import fundo from './../assets/image/fundo.svg'
 
 export const Flex12 = styled.div`
 	display: grid;
@@ -19,11 +19,11 @@ export const InputType = styled.input`
 	width: 317px;
 	display: block;
 	padding: .375rem 1.5rem;
-	border: 1px solid #ced4da;
+	border: 1px solid #C4C4C4;
 	border-radius: 20px;
 	font-size: 1rem;
 	line-height: 1.5;
-	color: #ced4da;
+	color: #70757a;
 	background-clip: padding-box;
 	margin-top: 5px;
 `;
@@ -55,9 +55,13 @@ export const Content = styled.div`
 	@media(max-width: 1050px) {
 		margin-bottom: 110px;
 		
-		p { 
-			color: #FFFFFF; 
-		}		
+		p {
+			color: #FFFFFF;
+		}
+
+		svg {
+			fill: #FFFFFF;
+		} 
 	}
 `;
 
