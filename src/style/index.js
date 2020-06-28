@@ -100,7 +100,7 @@ export const BtnLogin = styled.button`
 	}
 `;
 
-const ImgFundo = styled.img`
+const ImgFundo = styled.div`
 	grid-column: 3;
 	position: absolute;
 	top: 44px;

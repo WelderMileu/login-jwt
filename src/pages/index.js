@@ -3,18 +3,33 @@ import Container from '../components/container'
 import Formulario from '../components/form'
 import Globale from '../style/global'
 import ImgFundo from '../style'
-import photo from '../assets/image/phone.png'
+import { graphql, useStaticQuery } from 'gatsby'
+import Img from 'gatsby-image' 
 
-function App() { 
+function App() {
+	const { imagem } = useStaticQuery(graphql`
+		query {
+			imagem: file(relativePath: { eq: "phone.png" }) {
+				childImageSharp {
+					fixed(width: 410, height: 603) {
+						...GatsbyImageSharpFixed
+					}
+				}
+			}
+		}
+	`);
+
 	return (
 		<React.Fragment>
 			<Globale />
 			<Container>
 				<Formulario />
-				<ImgFundo 
-					src={ photo }
-					alt="Imagem de Fundo"
-				/>
+				<ImgFundo>
+					<Img 
+						fixed={imagem.childImageSharp.fixed}
+						alt="ImageBackground"
+					/>
+				</ImgFundo>
 			</Container>
 		</React.Fragment>
 	)
