@@ -1,8 +1,10 @@
 import React from 'react'
+import { FaUserCircle } from 'react-icons/fa'
+import { Link } from 'react-router-dom'
+
 import { Form, Content, View, Text } from './../../style'
 import InputText from '../input'
 import BtnSubmit from '../btn'
-import { FaUserCircle } from 'react-icons/fa'
 
 const Formulario = () => {
 	return (
@@ -20,7 +22,11 @@ const Formulario = () => {
 			<View>
 				<InputText type="text" placeholder="E-mail" />
 				<InputText type="text" placeholder="*************************" />
-				<BtnSubmit> Login </BtnSubmit>
+				<Link to="/routes/panel">
+					<BtnSubmit>
+						Login
+					</BtnSubmit>
+				</Link>
 			</View>
 
 			<View>

@@ -1,5 +1,6 @@
 import React from 'react'
-// import Container from './../../../components/container'
+import { Link } from 'react-router-dom'
+
 import { View, Text } from './../../../style'
 
 const Panel = () => {
@@ -8,6 +9,9 @@ const Panel = () => {
 			<Text>
 				Panel de Controle
 			</Text>
+			<Link to="/">
+				Pagina Inicial
+			</Link>
 		</View>
 	)
 }
