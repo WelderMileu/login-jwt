@@ -13,10 +13,10 @@ Link do site: https://mystifying-boyd-f9d7ea.netlify.app/
 
 **Desktop**
 
-![deskop](src/assets/image/desktop.png)
+![deskop](src/pages/assets/image/desktop.png)
 
 
 **Mobile** 
 
-![deskop](src/assets/image/mobile.png)
+![deskop](src/pages/assets/image/mobile.png)
 
