@@ -7,7 +7,7 @@ module.exports = {
 			resolve : `gatsby-source-filesystem`,
 			options : {
 				name : `images`,
-				path : path.join(__dirname, `src`, `assets`, `image`)
+				path : path.join(__dirname, `src`, `pages`,`assets`, `image`)
 			}
 		},
 

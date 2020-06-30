@@ -2,7 +2,7 @@ import React from 'react'
 import { FaUserCircle } from 'react-icons/fa'
 import { Link } from 'react-router-dom'
 
-import { Form, Content, View, Text } from './../../style'
+import { Form, Content, View, Text } from '../../style'
 import InputText from '../input'
 import BtnSubmit from '../btn'
 
@@ -12,8 +12,12 @@ const Formulario = () => {
 
 			<Content>
 				<View>
-					<FaUserCircle style={ style.FaIcon }/>
-					<Text style={ style.TextLogo }>
+					<FaUserCircle style={{ fontSize:'40px', color:'#C4C4C4'}}/>
+					<Text style={{
+						fontSize: '24px', 
+						marginTop: '2px',
+						textTransform: 'uppercase'
+					}}>
 					 	Login
 					</Text>
 				</View>
@@ -30,10 +34,17 @@ const Formulario = () => {
 			</View>
 
 			<View>
-				<Text style={ style.TextLembrete }>
+				<Text style={{
+					fontWeight:'bold', 
+					marginTop: '48px'
+				}}>
 					Esqueci a senha
 				</Text>
-				<Text style={ style.TextDescripion }>
+				<Text style={{
+						padding: '10px', 
+						marginTop: '48px',
+						fontFamily: 'arial'
+					}}>
 					Autenticação de usuario
 					utilizando a Tecnologia JsonWebToken.
 				</Text>
@@ -43,28 +54,5 @@ const Formulario = () => {
 	)
 }
 
-const style = {
-	TextDescripion : {
-		padding: '10px', 
-		marginTop: '48px',
-		fontFamily: 'arial'
-	},
-
-	TextLembrete : {
-		fontWeight:'bold', 
-		marginTop: '48px'
-	},
-
-	TextLogo : {
-		fontSize: '24px', 
-		marginTop: '2px',
-		textTransform: 'uppercase'
-	},
-
-	FaIcon : {
-		fontSize:'40px', 
-		color:'#C4C4C4'
-	}
-}
 
 export default Formulario;

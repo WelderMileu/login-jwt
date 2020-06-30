@@ -1,7 +1,7 @@
 import React from 'react'
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
 
-import Globale from '../style/global' 
+import Globale from './style/global' 
 import Index from './routes/index'
 import Panel from './routes/panel'
 

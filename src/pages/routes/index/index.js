@@ -2,9 +2,9 @@ import React from 'react'
 import { graphql, useStaticQuery } from 'gatsby'
 import Img from 'gatsby-image'
 
-import Container from './../../../components/container'
-import Formulario from './../../../components/form'
-import ImgFundo from './../../../style'
+import Container from './../../components/container'
+import Formulario from './../../components/form'
+import ImgFundo from '../../style'
 
 const Index = () => {
 	const { imagem } = useStaticQuery(graphql`
