@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter, Route, Switch } from 'react-router-dom'
+import { Router } from '@reach/router'
 
 import Globale from './style/global' 
 import Index from './routes/index'
@@ -7,13 +7,13 @@ import Panel from './routes/panel'
 
 function App() {
 	return (
-		<BrowserRouter>
+		<React.Fragment>
 			<Globale />
-			<Switch>
-				<Route path='/' exact={true} component={Index} />
-				<Route path='/routes/panel' exact={true} component={Panel} />
-			</Switch>
-		</BrowserRouter>
+			<Router basePath="/app">
+				<Index path="/" />
+				<Panel path="/panel" />
+			</Router>
+		</React.Fragment>
 	)
 }
 

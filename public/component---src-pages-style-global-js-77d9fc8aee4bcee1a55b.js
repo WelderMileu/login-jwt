@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[10],{"2S5i":function(n,t,i){"use strict";i.r(t);var r=i("vOnD");function o(){var n=function(n,t){t||(t=n.slice(0));return n.raw=t,n}(["\n\t*, html, #root {\n\t\tpadding: 0;\n\t\tmargin: 0;\n\t\tbox-sizing: border-box;\n\t\toutline: none;\n\t}\n\n\tbody {\n\t\tfont-family: 'calibri', sans-serif;\n\t\tfont-size: 1rem;\n\t}\n\n"]);return o=function(){return n},n}var e=Object(r.a)(o());t.default=e}}]);
+//# sourceMappingURL=component---src-pages-style-global-js-77d9fc8aee4bcee1a55b.js.map
