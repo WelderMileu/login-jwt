@@ -94,7 +94,7 @@ export const BtnLogin = styled.button`
 	use-select: none;
 	color: #FFFFFF;
 	line-height: 1.5;
-	background-color: #63FF70;	
+	background-color: #63FF7;	
 	cursor: pointer;
 	box-shadow: 0px 5px 5px rgb(0, 0, 0, 0.25);
 	transition: .2s ease-in-out;
