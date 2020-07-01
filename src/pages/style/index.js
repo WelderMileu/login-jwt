@@ -25,6 +25,10 @@ export const InputType = styled.input`
 	color: #70757a;
 	background-clip: padding-box;
 	margin-top: 5px;
+
+	@media(max-width: 500px) {
+		width: 100%;
+	}
 `;
 
 export const Form = styled.form`
@@ -39,6 +43,7 @@ export const Form = styled.form`
 
 	@media(max-width: 1050px) {
 		grid-column: 6;
+		width: 100%;
 		position:relative;
 		top: 20px;
 	}
@@ -93,9 +98,15 @@ export const BtnLogin = styled.button`
 	cursor: pointer;
 	box-shadow: 0px 5px 5px rgb(0, 0, 0, 0.25);
 	transition: .2s ease-in-out;
+	margin-top: 30px;
 
 	&:hover {
 		opacity: .8;
+	}
+
+	@media(max-width: 500px) {
+		width: 100%;
+		margin-right: 180px;
 	}
 `;
 
