@@ -2,7 +2,7 @@ import React from 'react';
 import { FaUserCircle } from 'react-icons/fa'
 import { Link } from 'gatsby';
 
-import { View, Text, Grid12, BtnSignIn } from '../../style'
+import { Text, Grid12, BtnSignIn, ViewSignIn } from '../../style'
 
 
 const Nav = () => {
@@ -26,17 +26,13 @@ const Nav = () => {
 				<Text style={{ fontSize: '1.2rem', color: '#FFFFFF' }}>Usuario Admin</Text>
 			</Text>
 
-			<View style={{
-					position: 'absolute',
-					top: '12px',
-					gridColumn: '11'
-			}}>
+			<ViewSignIn>
 				<Link to="/">
 					<BtnSignIn>
 						SignIn
 					</BtnSignIn>
 				</Link>
-			</View>
+			</ViewSignIn>
 		</Grid12>
 		
 	)

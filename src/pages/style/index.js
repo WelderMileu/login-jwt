@@ -83,6 +83,20 @@ export const View = styled.div`
 	display: block;
 `;
 
+export const ViewSignIn = styled.div`
+	position: absolute;
+	grid-column: 11;
+	top: 15px;
+
+	@media(max-width: 1050px) {
+		grid-column: 10;
+	}
+
+	@media(max-width: 600px) {
+		grid-column: 9;
+	}
+`;
+
 export const Text = styled.p`
 	font-size: 1rem;
 	color: #C4C4C4;
