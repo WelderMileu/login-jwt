@@ -1,2 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[10],{s85l:function(e,n,t){"use strict";t.r(n);var a=t("q1tI"),l=t.n(a),c=t("55Ip"),i=t("YfB2");n.default=function(){return l.a.createElement(i.View,null,l.a.createElement(i.Text,null,"Panel de Controle"),l.a.createElement(c.b,{to:"/"},"Pagina Inicial"))}}}]);
-//# sourceMappingURL=component---src-pages-routes-panel-index-js-db8c83860ec9310c5637.js.map

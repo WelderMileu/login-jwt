@@ -1,17 +1,14 @@
 import React from 'react'
-import { Link } from 'gatsby'
 
-import { View, Text } from './../../style'
+import { View } from './../../style'
+import Nav from '../../components/Nav'
+import Globale from './../../style/global'
 
 const Panel = () => {
 	return (
 		<View>
-			<Text>
-				Panel de Controle
-			</Text>
-			<Link to="/">
-				Pagina Inicial
-			</Link>
+			<Globale />
+			<Nav />
 		</View>
 	)
 }

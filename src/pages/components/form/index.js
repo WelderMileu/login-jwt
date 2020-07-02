@@ -2,14 +2,12 @@ import React from 'react'
 import { FaUserCircle } from 'react-icons/fa'
 import { Link } from 'gatsby'
 
-import { Form, Content, View, Text } from '../../style'
+import { Form, Content, View, Text, BtnLogin } from '../../style'
 import InputText from '../input'
-import BtnSubmit from '../btn'
 
 const Formulario = () => {
 	return (
 		<Form>
-
 			<Content>
 				<View>
 					<FaUserCircle style={{ fontSize:'40px', color:'#C4C4C4'}}/>
@@ -24,12 +22,18 @@ const Formulario = () => {
 			</Content>
 
 			<View>
-				<InputText type="text" placeholder="E-mail" />
-				<InputText type="text" placeholder="*************************" />
+				<InputText 
+					type="text" 
+					placeholder="E-mail" 
+				/>
+				<InputText 
+					type="text" 
+					placeholder="*************************" 
+				/>
 				<Link to="/routes/panel">
-					<BtnSubmit>
+					<BtnLogin>
 						Login
-					</BtnSubmit>
+					</BtnLogin>
 				</Link>
 			</View>
 
@@ -49,7 +53,6 @@ const Formulario = () => {
 					utilizando a Tecnologia JsonWebToken.
 				</Text>
 			</View>
-
 		</Form>
 	)
 }

@@ -14,6 +14,16 @@ export const Flex12 = styled.div`
 	overflow: hidden;
 `;
 
+export const Grid12 = styled.div`
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	grid-gap: 10px;
+	width: 100%;
+	height: 100vh;
+	position: relative;
+	overflow: hidden;
+`;
+
 export const InputType = styled.input`
 	width: 317px;
 	display: block;
@@ -102,11 +112,33 @@ export const BtnLogin = styled.button`
 
 	&:hover {
 		opacity: .8;
+		color: #63FF70;
+		background-color: #FFFFFF;
+		border: 1px solid #63FF70;
+		box-shadow: 0px 0px 0px rgb(0, 0, 0, 0.25);
 	}
 
 	@media(max-width: 500px) {
 		width: 100%;
 		margin-right: 180px;
+	}
+`;
+
+export const BtnSignIn = styled.button`
+	width: 128px;
+	height: 38px;
+	border: 1px solid #FFFFFF;
+	color: #FFFFFF;
+	border-radius: 20px;
+	background-color: transparent;
+	font-size: 1rem;
+	font-weight: bold;
+	cursor: pointer;
+	transition: .2s ease-in-out;
+
+	&:hover {
+		background-color: #FFFFFF;
+		color: #63FF70;
 	}
 `;
 
