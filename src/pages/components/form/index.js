@@ -2,12 +2,12 @@ import React from 'react'
 import { FaUserCircle } from 'react-icons/fa'
 import { Link } from 'gatsby'
 
-import { Form, Content, View, Text, BtnLogin } from '../../style'
+import { AutencationForm, Content, View, Text, BtnLogin } from '../../style'
 import InputText from '../input'
 
 const Formulario = () => {
 	return (
-		<Form>
+		<AutencationForm>
 			<Content>
 				<View>
 					<FaUserCircle style={{ fontSize:'40px', color:'#C4C4C4'}}/>
@@ -53,7 +53,7 @@ const Formulario = () => {
 					utilizando a Tecnologia JsonWebToken.
 				</Text>
 			</View>
-		</Form>
+		</AutencationForm>
 	)
 }
 

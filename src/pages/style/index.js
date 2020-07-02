@@ -41,7 +41,7 @@ export const InputType = styled.input`
 	}
 `;
 
-export const Form = styled.form`
+export const AutencationForm = styled.form`
 	grid-column: 8;
 	width: 317px;
 	display: flex;
@@ -94,6 +94,29 @@ export const ViewSignIn = styled.div`
 
 	@media(max-width: 600px) {
 		grid-column: 9;
+	}
+
+	@media(max-width: 500px) {
+		grid-column: 8;
+	}
+
+	@media(max-width: 320px) {
+		grid-column: 7;
+	}
+`;
+
+export const IconAdmin = styled.div`
+	color: #FFFFFF;
+	grid-column: 2;
+	position: absolute;
+	top: 12px;
+	display:flex;
+	justify-content: center;
+	align-Items: center;
+
+	@media(max-width: 320px) {
+		display:flex;
+		flex-direction: column;
 	}
 `;
 
@@ -153,6 +176,40 @@ export const BtnSignIn = styled.button`
 	&:hover {
 		background-color: #FFFFFF;
 		color: #63FF70;
+	}
+`;
+
+export const TableTitle = styled.div`
+	grid-column: 3;
+	display: flex;
+	position: absolute;
+	justify-content: space-between;
+	align-Items: center;
+	width: 864px;
+	margin-top: 97px;
+`;
+
+export const TableUsersInfo = styled.table`
+	grid-column: 3;
+	width: 864px;
+	position: absolute;
+	margin-top: 200px;
+`;
+
+export const TableUsersTitle = styled.tr`
+	background-color: #3C4043;
+	color: #FFFFFF;
+	height: 48px;
+	
+	td {
+		padding-left: 60px;
+	}
+`;
+
+export const TableUsersDados = styled.tr`
+	height: 48px;
+	td {
+		padding-left: 60px;
 	}
 `;
 
