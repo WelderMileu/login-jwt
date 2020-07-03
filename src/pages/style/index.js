@@ -161,6 +161,29 @@ export const BtnLogin = styled.button`
 	}
 `;
 
+export const BtnAdd = styled.button`
+	width: 128px;
+	height: 38px;
+	display: flex;
+	justify-content: center;
+	align-Items: center;
+	font-weight: bold;
+	border: 1px solid #63FF70;
+	border-radius: 20px;
+	white-spacing: nowreap;
+	font-size: 1rem;
+	padding: .375rem .75rem;
+	vertical-align: middle;
+	margin-top: 10px;
+	use-select: none;
+	line-height: 1.5;
+	cursor: pointer;
+	margin-top: 30px;
+	background-color:#FFFFFF;
+	color: #63FF70;
+`;
+
+
 export const BtnSignIn = styled.button`
 	width: 128px;
 	height: 38px;
@@ -185,31 +208,57 @@ export const TableTitle = styled.div`
 	position: absolute;
 	justify-content: space-between;
 	align-Items: center;
-	width: 864px;
+	width: 77%;
 	margin-top: 97px;
+
+	@media(max-width:1050px) {
+		margin-top: 50px;
+	}
 `;
 
 export const TableUsersInfo = styled.table`
 	grid-column: 3;
-	width: 864px;
+	width: 77%;
 	position: absolute;
 	margin-top: 200px;
+	border-collapse: collapse;
+
+	tr:nth-child(even) {
+		background-color: #C4C4C4;
+	}
+
+	@media(max-width: 1050px) {
+		margin-top: 150px;
+	} 
 `;
 
 export const TableUsersTitle = styled.tr`
 	background-color: #3C4043;
 	color: #FFFFFF;
 	height: 48px;
-	
+
 	td {
 		padding-left: 60px;
+	}
+
+	@media(max-width:500px) {
+		td {
+			padding-left: 10px !important;
+		}
 	}
 `;
 
 export const TableUsersDados = styled.tr`
 	height: 48px;
+
 	td {
 		padding-left: 60px;
+	}
+
+	@media(max-width:500px) {
+		td {
+			padding-left: 10px !important;
+		}
 	}
 `;
 

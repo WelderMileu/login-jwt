@@ -3,7 +3,7 @@ import { FaPlus} from 'react-icons/fa'
 import { 
 	Grid12, 
 	Text, 
-	BtnLogin, 
+	BtnAdd, 
 	TableTitle, 
 	TableUsersInfo,
 	TableUsersTitle,
@@ -17,18 +17,9 @@ const TableUsers = () => {
 				<Text style={{ fontSize: '24px', fontWeight: '500', color:'#7F818C' }}>
 					Page Users
 				</Text>
-				<BtnLogin style={{
-					backgroundColor:'#FFFFFF',
-					color:'#63FF70',
-					width: '128px',
-					border: '1px solid #63FF70',
-					boxShadow: '0px 0px 0px black',
-					display: 'flex',
-					justifyContent: 'center',
-					alignItems: 'center'
-				}}>
+				<BtnAdd>
 					<FaPlus style={{ marginRight: '5px' }}/> Add
-				</BtnLogin>
+				</BtnAdd>
 			</TableTitle>
 			<TableUsersInfo>
 				<TableUsersTitle>
@@ -36,6 +27,11 @@ const TableUsers = () => {
 					<td>Usuario</td>
 					<td>Senha</td>
 				</TableUsersTitle>
+				<TableUsersDados>
+					<td>ID</td>
+					<td>Usuario</td>
+					<td>Senha</td>
+				</TableUsersDados>
 				<TableUsersDados>
 					<td>ID</td>
 					<td>Usuario</td>
