@@ -214,6 +214,11 @@ export const TableTitle = styled.div`
 	@media(max-width:1050px) {
 		margin-top: 50px;
 	}
+
+	@media(max-width:500px) {
+		grid-column: 2;
+		width: 90%;
+	}
 `;
 
 export const TableUsersInfo = styled.table`
@@ -224,11 +229,16 @@ export const TableUsersInfo = styled.table`
 	border-collapse: collapse;
 
 	tr:nth-child(even) {
-		background-color: #C4C4C4;
+		background-color: #E6E6E6;
 	}
 
 	@media(max-width: 1050px) {
 		margin-top: 150px;
+	}
+
+	@media(max-width:500px) {
+		grid-column: 2;
+		width: 90%;
 	} 
 `;
 
