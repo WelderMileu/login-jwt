@@ -8,7 +8,7 @@ export const Flex12 = styled.div`
 	width: 100%;
 	height: 100vh;
 	background-image: url(${fundo});
-	background-color: #63FF70;
+	background-color: #2F2E41;
 	background-size: cover;
 	position: relative;
 	overflow: hidden;
@@ -141,7 +141,7 @@ export const BtnLogin = styled.button`
 	use-select: none;
 	color: #FFFFFF;
 	line-height: 1.5;
-	background-color: #63FF70;	
+	background-color: #2F2E41;	
 	cursor: pointer;
 	box-shadow: 0px 5px 5px rgb(0, 0, 0, 0.25);
 	transition: .2s ease-in-out;
@@ -149,9 +149,9 @@ export const BtnLogin = styled.button`
 
 	&:hover {
 		opacity: .8;
-		color: #63FF70;
+		color: #2F2E41;
 		background-color: #FFFFFF;
-		border: 1px solid #63FF70;
+		border: 1px solid #2F2E41;
 		box-shadow: 0px 0px 0px rgb(0, 0, 0, 0.25);
 	}
 
@@ -198,7 +198,7 @@ export const BtnSignIn = styled.button`
 
 	&:hover {
 		background-color: #FFFFFF;
-		color: #63FF70;
+		color: #2F2E41;
 	}
 `;
 
@@ -243,7 +243,7 @@ export const TableUsersInfo = styled.table`
 `;
 
 export const TableUsersTitle = styled.tr`
-	background-color: #3C4043;
+	background-color: #3A4C5A;
 	color: #FFFFFF;
 	height: 48px;
 

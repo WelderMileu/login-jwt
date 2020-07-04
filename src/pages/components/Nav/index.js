@@ -15,7 +15,7 @@ const Nav = () => {
 	return (
 		
 		<Grid12 style={{
-			backgroundColor:'#63FF70',
+			backgroundColor:'#2F2E41',
 			height: '71px',
 			boxShadow: '0px 4px 4px rgba(0, 0, 0, 0.25)'
 		}}>
