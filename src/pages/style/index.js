@@ -243,7 +243,7 @@ export const TableUsersInfo = styled.table`
 `;
 
 export const TableUsersTitle = styled.tr`
-	background-color: #3A4C5A;
+	background-color: #2F2E41;
 	color: #FFFFFF;
 	height: 48px;
 
@@ -270,6 +270,38 @@ export const TableUsersDados = styled.tr`
 			padding-left: 10px !important;
 		}
 	}
+`;
+
+export const ContainerTable = styled.div`
+	grid-column: 3;
+	width: 78%;
+	height: 200px;
+	margin-top: 250px;
+	position: absolute;
+	overflow: auto;
+
+	&::-webkit-scrollbar {
+		width: .5rem;
+	}
+
+	&::-webkit-scrollbar-track {
+		background-color: #f1f1f1;
+		border-radius: 20px;
+	}
+
+	&::-webkit-scrollbar-thumb {
+		background-color: gray;
+		border-radius: 20px;
+	}
+
+	@media(max-width: 1050px) {
+		margin-top: 200px;
+	}
+
+	@media(max-width:500px) {
+		grid-column: 2;
+		width: 92%;
+	} 
 `;
 
 const ImgFundo = styled.div`
